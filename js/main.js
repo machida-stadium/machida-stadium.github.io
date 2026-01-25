@@ -92,4 +92,30 @@ document.addEventListener('DOMContentLoaded', () => {
         });
         archiveNewsContainer.innerHTML = html;
     }
+
 });
+
+/**
+ * =========================================================
+ * 1. Google Analytics (gtag.js) 一括配信設定
+ * =========================================================
+ * このJSを読み込んでいるすべてのHTMLで統計が取れるようになります。
+ */
+(function() {
+    const GA_ID = "G-SPDYE4FYEV"; // あなたの測定ID
+
+    // Google Analytics スクリプトを動的にヘッドに追加
+    const script = document.createElement('script');
+    script.async = true;
+    script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_ID}`;
+    document.head.appendChild(script);
+
+    // dataLayerの設定
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){window.dataLayer.push(arguments);}
+    window.gtag = gtag; // グローバルにアクセス可能にする
+    gtag('js', new Date());
+
+    // ページビューを送信
+    gtag('config', GA_ID);
+})();
