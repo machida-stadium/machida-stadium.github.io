@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>町田駅周辺にスタジアムを推進する会 | 公式サイト</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Zen+Kaku+Gothic+New:wght@400;700;900&family=Barlow+Condensed:ital,wght@0,700;0,900;1,700&display=swap" rel="stylesheet">
+    
+    <!-- 外部CSSの読み込み -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <style>
+        /* index.html 固有のスタイル */
+        .hero-title { line-height: 1.05; font-weight: 900; }
+        .hero-overlay { background: linear-gradient(135deg, rgba(0,43,91,0.9) 0%, rgba(0,0,0,0.5) 100%); }
+        .logic-card { background: white; border-left: 4px solid var(--machida-blue); transition: all 0.3s ease; }
+        .logic-card:hover { transform: translateX(8px); background: #fdfdfd; }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-nav">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex flex-col">
+                        <span class="text-lg md:text-xl font-black text-blue-900 tracking-tighter leading-none mb-1">町田駅周辺にスタジアムを推進する会</span>
+                        <span class="text-[9px] font-bold text-blue-700 tracking-[0.3em] opacity-70 leading-none uppercase font-accent">Stadium Association Machida Station</span>
+                    </a>
+                </div>
+                <!-- メニュー項目を更新 -->
+                <div class="hidden md:flex items-center space-x-10 text-[11px] font-black uppercase tracking-widest">
+                    <a href="index.html" class="text-blue-900 border-b-2 border-blue-900 pb-1 flex flex-col items-center">
+                        <span>Home</span>
+                        <span class="text-[8px] normal-case mt-0.5 font-bold">トップ</span>
+                    </a>
+                    <a href="coming-soon.html" class="text-gray-500 hover:text-blue-900 transition flex flex-col items-center">
+                        <span>Vision</span>
+                        <span class="text-[8px] normal-case mt-0.5 font-bold">構想</span>
+                    </a>
+                    <a href="news.html" class="text-gray-500 hover:text-blue-900 transition flex flex-col items-center">
+                        <span>News</span>
+                        <span class="text-[8px] normal-case mt-0.5 font-bold">ニュース</span>
+                    </a>
+                    <a href="coming-soon.html" class="text-gray-500 hover:text-blue-900 transition flex flex-col items-center">
+                        <span>Signature</span>
+                        <span class="text-[8px] normal-case mt-0.5 font-bold text-red-600">署名</span>
+                    </a>
+                    <a href="coming-soon.html" class="text-gray-500 hover:text-blue-900 transition flex flex-col items-center">
+                        <span>Q&A</span>
+                        <span class="text-[8px] normal-case mt-0.5 font-bold">よくある質問</span>
+                    </a>
+                    <a href="coming-soon.html" class="text-gray-500 hover:text-blue-900 transition flex flex-col items-center">
+                        <span>Contact</span>
+                        <span class="text-[8px] normal-case mt-0.5 font-bold">問い合わせ</span>
+                    </a>
+                    <div class="flex items-center ml-6 border-l pl-6 border-gray-200">
+                        <a href="https://x.com/machida_stadium" target="_blank" class="text-gray-400 hover:text-black transition">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="md:hidden flex items-center">
+                   <button id="mobile-menu-btn" class="md:hidden flex flex-col justify-center items-center w-10 h-10 gap-1.5 focus:outline-none group">
+                        <span class="line-1 w-6 h-0.5 bg-blue-900 transition-all duration-300"></span>
+                        <span class="line-2 w-6 h-0.5 bg-blue-900 transition-all duration-300"></span>
+                        <span class="line-3 w-6 h-0.5 bg-blue-900 transition-all duration-300"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white absolute top-20 left-0 w-full p-8 shadow-2xl space-y-6 text-center border-t border-gray-100">
+            <a href="index.html" class="block text-lg font-black text-blue-900">HOME / トップ</a>
+            <a href="coming-soon.html" class="block text-lg font-black text-gray-500">VISION / 構想</a>
+            <a href="news.html" class="block text-lg font-black text-gray-500">NEWS / ニュース</a>
+            <a href="coming-soon.html" class="block text-lg font-black text-red-600">SIGNATURE / 署名</a>
+            <a href="coming-soon.html" class="block text-lg font-black text-gray-500">Q&A / よくある質問</a>
+            <a href="coming-soon.html" class="block text-lg font-black text-gray-500">CONTACT / 問い合わせ</a>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section class="relative h-[95vh] flex items-center justify-center text-white overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div class="w-full h-full bg-cover bg-center" style="background-image: url('images/hero.jpg');"></div>
+            <div class="absolute inset-0 hero-overlay"></div>
+        </div>
+        <div class="relative z-10 text-center px-6 max-w-5xl">
+            <h2 class="text-xs md:text-sm mb-6 font-bold tracking-[0.5em] font-accent text-blue-300 animate-fade-in uppercase italic">Urban Development & Football</h2>
+            <h1 class="text-5xl md:text-[5.5rem] hero-title mb-10 italic font-accent">
+                町田駅再開発<br>街の起爆剤に<br><span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-200 to-white">専用スタジアム</span>を
+            </h1>
+            <p class="text-base md:text-lg mb-12 font-medium opacity-90 leading-relaxed max-w-3xl mx-auto">
+                私たちは、町田駅周辺再開発「D地区」へのサッカー専用スタジアムを推進しています。<br class="hidden md:block">
+                これは単なるスポーツ施設の建設ではなく、町田の未来を創る都市戦略です。
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-6">
+                <a href="coming-soon.html" class="border border-white/40 backdrop-blur-sm text-white px-12 py-5 rounded-full font-black text-sm uppercase tracking-widest hover:bg-white hover:text-blue-900 btn-modern">
+                    View Concept / 構想を見る
+                </a>
+                <a href="coming-soon.html" class="border border-white/40 backdrop-blur-sm text-white px-12 py-5 rounded-full font-black text-sm uppercase tracking-widest hover:bg-white hover:text-blue-900 btn-modern">
+                    Join Signature / 署名する
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Message -->
+    <section class="py-32 bg-white">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="flex flex-col lg:flex-row gap-20">
+                <div class="lg:w-1/2">
+                    <h2 class="text-xs font-black text-blue-900 tracking-[0.4em] mb-4 uppercase font-accent italic">Our Identity</h2>
+                    <h3 class="text-4xl font-black text-gray-900 mb-8 leading-tight">一市民、サポーターとしての<br>「意見」の表明。</h3>
+                    <p class="text-gray-500 leading-loose mb-8 font-medium">
+                        私たちは特定のデベロッパーやクラブの代弁者ではありません。町田を愛する一市民として、そしてフットボールを愛するサポーターとして、「町田駅周辺にスタジアムがある未来」を切望し、その機運を醸成するために活動しています。
+                    </p>
+                    <div class="space-y-6">
+                        <div class="logic-card p-6 shadow-sm">
+                            <h4 class="font-bold text-gray-900 mb-2 italic font-accent">1. Not just for the team</h4>
+                            <p class="text-sm text-gray-600 font-medium">目的はチームの強化ではなく、町田駅周辺および町田市全体のさらなる発展です。</p>
+                        </div>
+                        <div class="logic-card p-6 shadow-sm">
+                            <h4 class="font-bold text-gray-900 mb-2 italic font-accent">2. D-District Integration</h4>
+                            <p class="text-sm text-gray-600 font-medium">現在進められている町田駅周辺再開発「D地区」の活用案として、スタジアムを提案します。</p>
+                        </div>
+                        <div class="logic-card p-6 shadow-sm">
+                            <h4 class="font-bold text-gray-900 mb-2 italic font-accent">3. Sustainable Model</h4>
+                            <p class="text-sm text-gray-600 font-medium">公設・民設は問いません。税金への依存のみを前提としない、持続可能な街の資産を目指すべきだと考えます。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 bg-gray-50 rounded-[40px] p-12 border border-gray-100 relative overflow-hidden">
+                    <h3 class="text-2xl font-black text-blue-900 mb-8 font-accent italic tracking-tight">Case Studies: City & Stadium</h3>
+                    <div class="space-y-8 relative z-10">
+                        <p class="text-gray-600 text-sm leading-relaxed font-medium">
+                            世界中で「街なかスタジアム」による都市の活性化が進んでいます。
+                        </p>
+                        <div class="grid grid-cols-1 gap-4">
+                            <div class="bg-white/60 backdrop-blur-sm p-5 rounded-2xl border border-white">
+                                <span class="text-[10px] font-black text-blue-500 uppercase tracking-widest">Successful Example 01</span>
+                                <h5 class="font-bold text-gray-900 mt-1">広島：エディオンピースウイング広島</h5>
+                                <p class="text-xs text-gray-500 mt-2 italic leading-relaxed">
+                                    都心部に位置するサッカースタジアムが、試合日以外も賑わう公園として機能。周辺の回遊性を劇的に向上させた事例。
+                                </p>
+                            </div>
+                            <div class="bg-white/60 backdrop-blur-sm p-5 rounded-2xl border border-white">
+                                <span class="text-[10px] font-black text-blue-500 uppercase tracking-widest">Successful Example 02</span>
+                                <h5 class="font-bold text-gray-900 mt-1">長崎：長崎スタジアムシティ</h5>
+                                <p class="text-xs text-gray-500 mt-2 italic leading-relaxed">
+                                    スタジアムを中心とした複合施設が地域経済を活性化。スポーツ観戦以外の目的でも訪れる人々が増加。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute -bottom-20 -right-20 opacity-5">
+                        <svg class="w-80 h-80 text-blue-900" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Feed Section -->
+    <section class="py-32 bg-white border-t border-gray-50">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 text-center mb-16">
+            <h2 class="text-xs font-black text-blue-900 tracking-[0.5em] mb-4 uppercase font-accent italic">Communication</h2>
+            <h3 class="text-4xl font-black text-gray-900 leading-tight">声を、チカラに。</h3>
+            <p class="text-gray-500 mt-6 font-medium max-w-2xl mx-auto">
+                インターネット上では様々な議論がありますが、私たちは建設的な対話を重視します。批判のための批判ではなく、町田の未来のために何がベストかを発信・議論しています。
+            </p>
+        </div>
+
+        <div class="max-w-3xl mx-auto px-6">
+            <div class="bg-gray-50 p-3 rounded-[32px] shadow-sm border border-gray-100">
+                <div class="h-[600px] overflow-y-auto rounded-[24px] no-scrollbar">
+                    <a class="twitter-timeline" data-height="600" data-theme="light" data-chrome="noheader nofooter noborders transparent" href="https://twitter.com/machida_stadium?ref_src=twsrc%5Etfw">Tweets by machida_stadium</a> 
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- News Section -->
+<section class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+        <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-4">
+            <div>
+                <h2 class="text-xs font-bold tracking-[0.5em] font-accent text-blue-600 uppercase mb-4 italic">Latest Updates</h2>
+                <h3 class="text-4xl md:text-5xl font-black italic font-accent text-blue-900 leading-none">NEWS</h3>
+            </div>
+            <p class="text-gray-500 text-sm font-bold max-w-md md:text-right">スタジアム構想に関する最新の活動報告、お知らせを配信しています。</p>
+        </div>
+
+        <!-- ここにJavaScriptから最新3件が流し込まれます -->
+        <div id="news-list-container" class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+            <!-- 読み込み中やJS無効時のプレースホルダなどを置いても良い -->
+        </div>
+
+        <div class="flex justify-center">
+            <a href="news.html" class="border border-blue-900/10 text-blue-900 px-12 py-4 rounded-full font-black text-xs uppercase tracking-[0.2em] no-underline transition-all duration-300 hover:bg-blue-900 hover:text-white">
+                View All News / すべてのニュースを見る
+            </a>
+        </div>
+    </div>
+</section>
+
+
+<!-- Footer -->
+    <footer class="bg-blue-900 text-white py-24">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="flex flex-col md:flex-row justify-between items-start mb-20">
+                <div class="mb-16 md:mb-0">
+                    <h2 class="text-2xl font-black italic font-accent text-white mb-6 tracking-tighter uppercase leading-none">
+                        町田駅周辺に<br>スタジアムを推進する会
+                    </h2>
+                    <p class="text-blue-200 text-xs max-w-xs leading-relaxed font-bold italic mb-6">
+                        Football Stadium as a catalyst for urban growth.
+                    </p>
+                    <p class="text-[10px] text-blue-300/60 leading-relaxed max-w-sm font-medium mb-8">
+                        当サイトは「町田駅周辺にスタジアムを推進する会」の活動内容を紹介するサイトです。<br>特定の政党、個人を応援するものではありません。
+                    </p>
+                    
+                    <!-- SNS Icons -->
+                    <div class="flex items-center gap-5">
+                        <a href="https://x.com/machida_stadium" target="_blank" rel="noopener noreferrer" class="w-10 h-10 flex items-center justify-center rounded-full bg-white/5 border border-white/10 hover:bg-white hover:text-blue-900 transition-all duration-300 group">
+                            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
+                            </svg>
+                        </a>
+                        <a href="https://youtube.com/@あなたのID" target="_blank" rel="noopener noreferrer" class="w-10 h-10 flex items-center justify-center rounded-full bg-white/5 border border-white/10 hover:bg-white hover:text-red-600 transition-all duration-300 group">
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-16 md:gap-24">
+                    <div>
+                        <h3 class="text-[10px] font-black text-blue-300 uppercase tracking-[0.3em] mb-8">Menu</h3>
+                        <ul class="text-xs font-bold space-y-4 list-none p-0">
+                            <li><a href="index.html" class="text-white/70 hover:text-white transition no-underline">トップ / Top</a></li>
+                            <li><a href="coming-soon.html" class="text-white/70 hover:text-white transition no-underline">構想 / Vision</a></li>
+                            <li><a href="news.html" class="text-white/70 hover:text-white transition no-underline">ニュース / News</a></li>
+                            <li><a href="coming-soon.html" class="text-red-400 hover:text-red-300 transition no-underline">署名 / Signature</a></li>
+                            <li><a href="coming-soon.html" class="text-white/70 hover:text-white transition no-underline">よくある質問 / Q&A</a></li>
+                            <li><a href="coming-soon.html" class="text-white/70 hover:text-white transition no-underline">問い合わせ / Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-white/10 pt-12 flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="text-[10px] font-black text-blue-300 tracking-widest uppercase italic">
+                    &copy; 2026 町田駅周辺にスタジアムを推進する会. All Rights Reserved.
+                </div>
+                <div class="flex justify-center gap-6">
+                    <a href="policy.html" class="text-[10px] font-black text-blue-300 hover:text-white transition no-underline uppercase tracking-widest border-b border-blue-300/30">プライバシーポリシー / 免責事項</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 外部JSの読み込み -->
+    <script src="js/main.js"></script>
+</body>
+</html>
