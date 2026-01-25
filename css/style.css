@@ -1,0 +1,76 @@
+/* ---------------------------------------------------------
+   町田駅周辺にスタジアムを推進する会 - 共通CSS (UI強化版)
+   --------------------------------------------------------- */
+
+:root {
+    --machida-blue: #002B5B;
+    --accent-blue: #0056B3;
+    --bg-light: #F8FAFC;
+    --text-main: #111827; /* より深い黒でコントラストを強化 */
+    --text-muted: #4B5563;
+}
+
+body {
+    font-family: 'Inter', 'Zen Kaku Gothic New', -apple-system, sans-serif;
+    scroll-behavior: smooth;
+    background-color: var(--bg-light);
+    color: var(--text-main);
+    line-height: 1.75; /* 行間を広げて読みやすく */
+    font-size: 16px; /* 基本サイズを16pxに */
+}
+
+/* モバイルでのフォントサイズ調整 */
+@media (max-width: 640px) {
+    body {
+        font-size: 15px;
+    }
+}
+
+.font-accent {
+    font-family: 'Barlow Condensed', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* 視認性向上のための共通クラス */
+.text-readable {
+    font-weight: 500;
+    letter-spacing: -0.01em;
+}
+
+/* Navigation Style */
+.glass-nav {
+    background: rgba(255, 255, 255, 0.95); /* 透明度を下げて視認性アップ */
+    backdrop-filter: blur(12px) saturate(180%);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+/* Button Style */
+.btn-modern {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    letter-spacing: 0.1em;
+    font-weight: 800;
+}
+
+.btn-modern:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 24px -10px rgba(0,43,91,0.4);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+/* メニューが開いている時（activeクラスがついた時）の動き */
+#mobile-menu-btn.active .line-1 {
+    transform: translateY(8px) rotate(45deg);
+}
+
+#mobile-menu-btn.active .line-2 {
+    opacity: 0;
+    transform: translateX(-10px);
+}
+
+#mobile-menu-btn.active .line-3 {
+    transform: translateY(-8px) rotate(-45deg);
+}
