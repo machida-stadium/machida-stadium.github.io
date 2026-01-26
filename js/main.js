@@ -131,3 +131,58 @@ document.addEventListener('DOMContentLoaded', () => {
     // ページビューを送信
     gtag('config', GA_ID);
 })();
+
+/**
+ * FAQアコーディオンの制御ロジック
+ */
+window.addEventListener('DOMContentLoaded', () => {
+    const faqQuestions = document.querySelectorAll('.faq-question');
+    
+    faqQuestions.forEach(question => {
+        question.addEventListener('click', () => {
+            const item = question.parentElement;
+            
+            // 1つだけ開くように、他の項目をすべて閉じる
+            document.querySelectorAll('.faq-item').forEach(otherItem => {
+                if (otherItem !== item) {
+                    otherItem.classList.remove('active');
+                }
+            });
+            
+            // クリックした項目の表示/非表示を切り替える
+            item.classList.toggle('active');
+        });
+    });
+});
+
+/**
+ * SNSシェア機能（X, LINE, リンクコピー）
+ */
+function shareOnX() {
+    const text = "町田駅周辺に、スタジアムを。未来の町田を作るプロジェクトが始動しました。";
+    const url = window.location.href;
+    const xUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(url)}`;
+    window.open(xUrl, '_blank');
+}
+
+function shareOnLine() {
+    const url = window.location.href;
+    const lineUrl = `https://social-plugins.line.me/lineit/share?url=${encodeURIComponent(url)}`;
+    window.open(lineUrl, '_blank');
+}
+
+function copyPageLink() {
+    const url = window.location.href;
+    const tempInput = document.createElement("input");
+    document.body.appendChild(tempInput);
+    tempInput.value = url;
+    tempInput.select();
+    document.execCommand("copy"); 
+    document.body.removeChild(tempInput);
+
+    const msg = document.getElementById("copy-message");
+    if (msg) {
+        msg.style.opacity = "1";
+        setTimeout(() => { msg.style.opacity = "0"; }, 2000);
+    }
+}

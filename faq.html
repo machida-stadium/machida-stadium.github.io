@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>プライバシーポリシー・免責事項 | 町田駅周辺にスタジアムを推進する会</title>
+    <title>よくある質問 | 町田駅周辺にスタジアムを推進する会</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,17 +18,21 @@
         .hero-overlay { background: linear-gradient(135deg, rgba(0,43,91,0.9) 0%, rgba(0,0,0,0.5) 100%); }
         .logic-card { background: white; border-left: 4px solid var(--machida-blue); transition: all 0.3s ease; }
         .logic-card:hover { transform: translateX(8px); background: #fdfdfd; }
-        .policy-section h2 { border-left: 4px solid #002B5B; padding-left: 1rem; margin-top: 3rem; margin-bottom: 1.5rem; font-size: 1.25rem; font-weight: 900; color: #002B5B; }
-        .policy-section h3 { font-weight: 700; color: #1F2937; margin-top: 2rem; margin-bottom: 0.75rem; }
-        .policy-section p, .policy-section ul { color: #4B5563; line-height: 1.8; margin-bottom: 1rem; font-size: 0.9375rem; }
-        .policy-section ul { list-style-type: disc; margin-left: 1.5rem; }
+    </style>
+    <style>
+        body { font-family: 'Zen Kaku Gothic New', sans-serif; }
+        .font-barlow { font-family: 'Barlow Condensed', sans-serif; }
+        .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out; }
+        .faq-item.active .faq-answer { max-height: 500px; transition: max-height 0.5s ease-in; }
+        .faq-icon { transition: transform 0.3s; }
+        .faq-item.active .faq-icon { transform: rotate(180deg); }
     </style>
 
     <meta name="google-site-verification" content="Tu_Z7CzRrVGG_MnlrPC-Zrf82foOdWjU0kR5sVfTMUo" />
 </head>
 <body>
 
-    <!-- Navigation -->
+        <!-- Navigation -->
     <nav class="fixed w-full z-50 glass-nav">
         <div class="max-w-7xl mx-auto px-6 lg:px-12">
             <div class="flex justify-between h-20">
@@ -56,7 +60,7 @@
                         <span>Signature</span>
                         <span class="text-[8px] normal-case mt-0.5 font-bold text-red-600">署名</span>
                     </a>
-                    <a href="faq.html" class="text-gray-500 hover:text-blue-900 transition flex flex-col items-center">
+                    <a href="faq.html" class="text-blue-900 border-b-2 border-blue-900 pb-1 flex flex-col items-center">
                         <span>Q&A</span>
                         <span class="text-[8px] normal-case mt-0.5 font-bold">よくある質問</span>
                     </a>
@@ -84,109 +88,145 @@
             <a href="coming-soon.html" class="block text-lg font-black text-gray-500">VISION / 構想</a>
             <a href="news.html" class="block text-lg font-black text-gray-500">NEWS / ニュース</a>
             <a href="signature.html" class="block text-lg font-black text-red-600">SIGNATURE / 署名</a>
-            <a href="faq.html" class="block text-lg font-black text-gray-500">Q&A / よくある質問</a>
+            <a href="faq.html" class="block text-lg font-black text-blue-900">Q&A / よくある質問</a>
             <a href="contact.html" class="block text-lg font-black text-gray-500">CONTACT / 問い合わせ</a>
         </div>
     </nav>
 
-
-    <!-- Header -->
-    <header class="pt-40 pb-16 bg-white border-b border-gray-100">
-        <div class="max-w-4xl mx-auto px-6 text-center">
-            <h1 class="text-3xl md:text-4xl font-black text-blue-900 mb-4 tracking-tight">プライバシーポリシー・免責事項</h1>
-            <p class="text-gray-400 text-xs font-bold tracking-[0.3em] uppercase">Privacy Policy & Terms of Service</p>
+<!-- Header -->
+    <header class="pt-32 pb-16 bg-white border-b border-gray-100">
+        <div class="max-w-3xl mx-auto px-6 text-center">
+            <span class="text-blue-600 font-barlow font-black italic tracking-[0.3em] text-sm mb-4 block">FAQ</span>
+            <h1 class="text-3xl md:text-4xl font-black tracking-tighter mb-6">よくある質問</h1>
+            <p class="text-gray-500 text-sm leading-relaxed">
+                スタジアム推進活動について、皆様から多く寄せられるご質問にお答えします。
+            </p>
         </div>
     </header>
 
-    <!-- Main Content -->
-    <main class="py-20">
-        <div class="max-w-4xl mx-auto px-6 policy-section bg-white p-8 md:p-16 rounded-[40px] shadow-sm border border-gray-100">
-            
-            <section id="disclaimer">
-                <h2>免責事項</h2>
-                <p>
-                    当サイト（町田駅周辺にスタジアムを推進する会 公式サイト）における免責事項は以下の通りです。
-                </p>
-                <h3>情報の正確性について</h3>
-                <p>
-                    当サイトに掲載された内容によって生じた損害等の一切の責任を負いかねます。当サイトのコンテンツ・情報について、可能な限り正確な情報を提供するよう努めておりますが、正確性や安全性を保証するものではありません。特に再開発構想や行政の計画に関する情報は、状況により変更される場合があります。
-                </p>
-                <h3>損害賠償等の責任</h3>
-                <p>
-                    当会は、利用者が当サイトを利用したことにより発生した利用者の損害及び利用者が第三者に与えた損害について、いかなる責任も負わないものとします。当サイトからリンクやバナーなどによって他のサイトに移動された場合、移動先サイトで提供される情報、サービス等について一切の責任を負いません。
-                </p>
-                <h3>著作権・肖像権について</h3>
-                <p>
-                    当サイトに掲載されている全てのコンテンツ（文章、画像、動画、音声、デザイン等）の著作権・肖像権等は、当会または各権利所有者に帰属します。無断で転載、複製、販売、譲渡、二次利用を行うことを固く禁じます。
-                </p>
-            </section>
-
-            <section id="privacy">
-                <h2>プライバシーポリシー</h2>
-                <p>
-                    当会は、本ウェブサイトの運営において、個人情報の重要性を認識し、以下の方針に基づき個人情報の保護に努めます。
-                </p>
+    <!-- FAQ Section -->
+    <section class="py-20">
+        <div class="max-w-3xl mx-auto px-6">
+            <div class="space-y-4">
                 
-                <h3>個人情報の収集と利用目的</h3>
-                <p>
-                    今後設置されるお問い合わせフォームや、署名活動等を通じて、氏名、メールアドレス等の個人情報を収集する場合があります。収集した個人情報は、以下の目的のみに利用いたします。
-                </p>
-                <ul>
-                    <li>当会からのご連絡、活動報告、ご質問に対する回答</li>
-                    <li>署名活動において、あらかじめ明示した提出先への提出（署名データとして）</li>
-                    <li>本活動の改善および利便性向上のための統計分析</li>
-                </ul>
+                <!-- Q1 -->
+                <div class="faq-item bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
+                    <button class="faq-question w-full flex items-center justify-between p-6 text-left focus:outline-none">
+                        <span class="font-bold text-gray-800 pr-4">なぜ「町田駅周辺」にこだわるのですか？</span>
+                        <svg class="faq-icon w-5 h-5 text-blue-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="px-6 pb-6 text-sm text-gray-600 leading-relaxed border-t border-gray-50 pt-4">
+                            最大の理由は「アクセスの良さ」と「経済波及効果」です。町田駅は1日平均約45万人が利用する交通の要所であり、歩いて行ける距離にスタジアムがあることで、試合前後にお客様が周辺店舗を利用し、街全体が活性化します。また、公共交通機関の利用を促すことで、環境負荷の低減にもつながります。
+                        </div>
+                    </div>
+                </div>
 
-                <h3>個人情報の管理・安全対策</h3>
-                <p>
-                    お預かりした個人情報は、漏洩、滅失、不正アクセス等を防止するため、厳重な管理体制のもとで安全対策を実施します。また、利用目的が達成され、不要となった個人情報は速やかに廃棄または消去いたします。
-                </p>
+                <!-- Q2 -->
+                <div class="faq-item bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
+                    <button class="faq-question w-full flex items-center justify-between p-6 text-left focus:outline-none">
+                        <span class="font-bold text-gray-800 pr-4">スタジアムができると、騒音や渋滞がひどくなりませんか？</span>
+                        <svg class="faq-icon w-5 h-5 text-blue-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="px-6 pb-6 text-sm text-gray-600 leading-relaxed border-t border-gray-50 pt-4">
+                            非常に重要な課題です。最新のスタジアム設計では遮音性の高い構造を採用することが一般的です。渋滞については、町田駅周辺という立地を活かし、公共交通機関の利用を促すことで、車の流入を抑制する計画を提言しています。地域住民の皆様の生活環境を守ることが大前提です。
+                        </div>
+                    </div>
+                </div>
 
-                <h3>個人情報の第三者提供</h3>
-                <p>
-                    当会は、以下の場合を除き、収集した個人情報を第三者に提供することはありません。
-                </p>
-                <ul>
-                    <li>ご本人の同意がある場合</li>
-                    <li>法令に基づき裁判所や警察等の公的機関から開示要請があった場合</li>
-                    <li>署名活動の趣旨に基づき、行政機関等の提出先へ提出する場合</li>
-                </ul>
+                <!-- Q3 -->
+                <div class="faq-item bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
+                    <button class="faq-question w-full flex items-center justify-between p-6 text-left focus:outline-none">
+                        <span class="font-bold text-gray-800 pr-4">建設費用や維持費はどこから出すのですか？</span>
+                        <svg class="faq-icon w-5 h-5 text-blue-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="px-6 pb-6 text-sm text-gray-600 leading-relaxed border-t border-gray-50 pt-4">
+                            民設か公設かは問いません。公設の場合でも税金だけに頼るのではなく、民間資金の活用（PFI手法など）や、ネーミングライツ、ふるさと納税、寄付金などの多様な財源確保を提案しています。また、試合日以外もコンサートやカンファレンス、日常的な商業施設として稼働させることで、自立した運営を目指すべきだと考えています。
+                        </div>
+                    </div>
+                </div>
 
-                <h3>アクセス解析ツールについて</h3>
-                <p>
-                    当サイトでは、Googleによるアクセス解析ツール「Googleアナリティクス」を利用しています。このツールはトラフィックデータの収集のためにクッキー（Cookie）を使用しています。このトラフィックデータは匿名で収集されており、個人を特定するものではありません。ブラウザの設定でCookieを無効にすることで、この収集を拒否することができます。
-                </p>
-            </section>
+                <!-- Q4 -->
+                <div class="faq-item bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
+                    <button class="faq-question w-full flex items-center justify-between p-6 text-left focus:outline-none">
+                        <span class="font-bold text-gray-800 pr-4">今のスタジアム（町田GIONスタジアム）はどうなるのですか？</span>
+                        <svg class="faq-icon w-5 h-5 text-blue-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="px-6 pb-6 text-sm text-gray-600 leading-relaxed border-t border-gray-50 pt-4">
+                            野津田の競技場は豊かな自然に囲まれた素晴らしい施設です。駅周辺に新スタジアムを作ることで、野津田は「陸上競技や多目的スポーツ、市民の憩いの場」としてさらに充実させるという、役割分担が可能になると考えています。<br>また、野外フェスなどの音楽ライブや地域イベントの開催地としても活用できると考えています。
+                        </div>
+                    </div>
+                </div>
 
-            <section id="prohibitions">
-                <h2>禁止事項</h2>
-                <p>
-                    当サイトの利用に際し、以下の行為を禁止します。
-                </p>
-                <ul>
-                    <li>当サイトの運営を妨げる行為、または支障をきたす恐れのある行為。</li>
-                    <li>他の利用者、第三者もしくは当会に迷惑、不利益もしくは損害を与える行為。</li>
-                    <li>公序良俗に反する行為、またはその恐れのある行為。</li>
-                    <li>虚偽の内容を用いたお問い合わせや、スパム送信、マルウェア拡散等の行為。</li>
-                    <li>その他、当会が不適切と判断する行為。</li>
-                </ul>
-            </section>
+                <!-- Q5 -->
+                <div class="faq-item bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
+                    <button class="faq-question w-full flex items-center justify-between p-6 text-left focus:outline-none">
+                        <span class="font-bold text-gray-800 pr-4">モノレールはどうなるのですか？</span>
+                        <svg class="faq-icon w-5 h-5 text-blue-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="px-6 pb-6 text-sm text-gray-600 leading-relaxed border-t border-gray-50 pt-4">
+                            現在東京都と町田市が進めている多摩都市モノレール町田延伸は、町田GIONスタジアムを経由する大回りなルートが計画されています。新スタジアムが町田駅周辺に建設されれば、モノレールのルート見直しにより、より直線的で効率的な延伸が可能となり、建設費用の削減や早期延伸、利用者の利便性向上が期待できます。
+                        </div>
+                    </div>
+                </div>
 
-            <section id="neutrality">
-                <h2>活動の独立性について</h2>
-                <p>
-                    「町田駅周辺にスタジアムを推進する会」は、有志による独立した団体です。特定の政党や、特定の個人（政治家等）を支援・応援する目的で運営されているものではありません。
-                </p>
-            </section>
+                <!-- Q6 -->
+                <div class="faq-item bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
+                    <button class="faq-question w-full flex items-center justify-between p-6 text-left focus:outline-none">
+                        <span class="font-bold text-gray-800 pr-4">D地区はスタジアム建設に土地は狭くありませんか？</span>
+                        <svg class="faq-icon w-5 h-5 text-blue-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="px-6 pb-6 text-sm text-gray-600 leading-relaxed border-t border-gray-50 pt-4">
+                            町田駅周辺再開発のD地区は線路と河川に挟まれた細長い土地です。確かにスタジアム建設には制約がありますが、線路の移設や高層化で対応することが可能だと考えています。<br>詳細は今後公開予定のスタジアム構想にてご説明いたします。
+                        </div>
+                    </div>
+                </div>
 
-            <div class="mt-20 pt-12 border-t border-gray-100 flex flex-col md:flex-row justify-between items-center gap-4">
-                <p class="text-[10px] font-bold text-gray-400 uppercase tracking-widest italic">更新日時: 2026.01.26</p>
-                <a href="index.html" class="text-xs font-black text-blue-900 no-underline hover:opacity-50 transition">BACK TO TOP</a>
+                <!-- Q7 -->
+                <div class="faq-item bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
+                    <button class="faq-question w-full flex items-center justify-between p-6 text-left focus:outline-none">
+                        <span class="font-bold text-gray-800 pr-4">スタジアムの規模はどのくらいを想定してますか？</span>
+                        <svg class="faq-icon w-5 h-5 text-blue-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="px-6 pb-6 text-sm text-gray-600 leading-relaxed border-t border-gray-50 pt-4">
+                            土地の制約上、大規模なスタジアムは難しいですが、線路の移設やスタンドの高層化、またゴール裏の拡充等によって最大で20000～25000席の収容人数を確保できると考えています。<br>詳細は今後公開予定のスタジアム構想にてご説明いたします。
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q8 -->
+                <div class="faq-item bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
+                    <button class="faq-question w-full flex items-center justify-between p-6 text-left focus:outline-none">
+                        <span class="font-bold text-gray-800 pr-4">いつ開業するの？</span>
+                        <svg class="faq-icon w-5 h-5 text-blue-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="px-6 pb-6 text-sm text-gray-600 leading-relaxed border-t border-gray-50 pt-4">
+                            最短で2032年の開業ができると考えています。
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Footer Message -->
+            <div class="mt-16 text-center">
+                <p class="text-sm text-gray-500 mb-6">解決しない疑問や、より詳細な情報が必要な場合はお気軽にお問い合わせください。</p>
+                <a href="contact.html" class="inline-block px-10 py-4 bg-blue-600 text-white rounded-xl font-black italic tracking-widest text-sm hover:bg-blue-700 transition-all shadow-lg shadow-blue-200">
+                    CONTACT US / お問い合わせ
+                </a>
             </div>
         </div>
-    </main>
+    </section>
 
-<!-- Footer -->
+
+    <!-- Footer -->
     <footer class="bg-blue-900 text-white py-24">
         <div class="max-w-7xl mx-auto px-6 lg:px-12">
             <div class="flex flex-col md:flex-row justify-between items-start mb-20">
@@ -241,8 +281,7 @@
             </div>
         </div>
     </footer>
-<!-- 共通JS読み込み -->
- <script src="js/main.js"></script>
+    <script src="js/main.js"></script>
 
 <!-- 
   SNS Share Unit (Functional Edition)
