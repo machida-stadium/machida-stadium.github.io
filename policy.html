@@ -8,15 +8,25 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Zen+Kaku+Gothic+New:wght@400;700;900&family=Barlow+Condensed:ital,wght@0,700;0,900;1,700&display=swap" rel="stylesheet">
+    
+    <!-- 外部CSSの読み込み -->
     <link rel="stylesheet" href="css/style.css">
+    
     <style>
+        /* index.html 固有のスタイル */
+        .hero-title { line-height: 1.05; font-weight: 900; }
+        .hero-overlay { background: linear-gradient(135deg, rgba(0,43,91,0.9) 0%, rgba(0,0,0,0.5) 100%); }
+        .logic-card { background: white; border-left: 4px solid var(--machida-blue); transition: all 0.3s ease; }
+        .logic-card:hover { transform: translateX(8px); background: #fdfdfd; }
         .policy-section h2 { border-left: 4px solid #002B5B; padding-left: 1rem; margin-top: 3rem; margin-bottom: 1.5rem; font-size: 1.25rem; font-weight: 900; color: #002B5B; }
         .policy-section h3 { font-weight: 700; color: #1F2937; margin-top: 2rem; margin-bottom: 0.75rem; }
         .policy-section p, .policy-section ul { color: #4B5563; line-height: 1.8; margin-bottom: 1rem; font-size: 0.9375rem; }
         .policy-section ul { list-style-type: disc; margin-left: 1.5rem; }
     </style>
+
+    <meta name="google-site-verification" content="Tu_Z7CzRrVGG_MnlrPC-Zrf82foOdWjU0kR5sVfTMUo" />
 </head>
-<body class="bg-gray-50 text-gray-900 antialiased font-['Zen_Kaku_Gothic_New']">
+<body>
 
     <!-- Navigation -->
     <nav class="fixed w-full z-50 glass-nav">
@@ -30,7 +40,7 @@
                 </div>
                 <!-- メニュー項目を更新 -->
                 <div class="hidden md:flex items-center space-x-10 text-[11px] font-black uppercase tracking-widest">
-                    <a href="index.html" class="text-blue-900 border-b-2 border-blue-900 pb-1 flex flex-col items-center">
+                    <a href="index.html" class="text-gray-500 hover:text-blue-900 transition flex flex-col items-center">
                         <span>Home</span>
                         <span class="text-[8px] normal-case mt-0.5 font-bold">トップ</span>
                     </a>
@@ -50,7 +60,7 @@
                         <span>Q&A</span>
                         <span class="text-[8px] normal-case mt-0.5 font-bold">よくある質問</span>
                     </a>
-                    <a href="coming-soon.html" class="text-gray-500 hover:text-blue-900 transition flex flex-col items-center">
+                    <a href="contact.html" class="text-gray-500 hover:text-blue-900 transition flex flex-col items-center">
                         <span>Contact</span>
                         <span class="text-[8px] normal-case mt-0.5 font-bold">問い合わせ</span>
                     </a>
@@ -70,14 +80,15 @@
             </div>
         </div>
         <div id="mobile-menu" class="hidden md:hidden bg-white absolute top-20 left-0 w-full p-8 shadow-2xl space-y-6 text-center border-t border-gray-100">
-            <a href="index.html" class="block text-lg font-black text-blue-900">HOME / トップ</a>
+            <a href="index.html" class="block text-lg font-black text-gray-500">HOME / トップ</a>
             <a href="coming-soon.html" class="block text-lg font-black text-gray-500">VISION / 構想</a>
             <a href="news.html" class="block text-lg font-black text-gray-500">NEWS / ニュース</a>
             <a href="coming-soon.html" class="block text-lg font-black text-red-600">SIGNATURE / 署名</a>
             <a href="coming-soon.html" class="block text-lg font-black text-gray-500">Q&A / よくある質問</a>
-            <a href="coming-soon.html" class="block text-lg font-black text-gray-500">CONTACT / 問い合わせ</a>
+            <a href="contact.html" class="block text-lg font-black text-gray-500">CONTACT / 問い合わせ</a>
         </div>
     </nav>
+
 
     <!-- Header -->
     <header class="pt-40 pb-16 bg-white border-b border-gray-100">
@@ -106,7 +117,7 @@
                 </p>
                 <h3>著作権・肖像権について</h3>
                 <p>
-                    当サイトに掲載されている全てのコンテンツ（文章、画像、動画、音声、デザイン等）の著作権・肖像権等は、当会または各権利所有者に帰属します。法的に認められている引用の範囲を超えて、無断で転載、複製、販売、譲渡、二次利用を行うことを固く禁じます。
+                    当サイトに掲載されている全てのコンテンツ（文章、画像、動画、音声、デザイン等）の著作権・肖像権等は、当会または各権利所有者に帰属します。無断で転載、複製、販売、譲渡、二次利用を行うことを固く禁じます。
                 </p>
             </section>
 
@@ -164,7 +175,7 @@
             <section id="neutrality">
                 <h2>活動の独立性について</h2>
                 <p>
-                    「町田駅周辺にスタジアムを推進する会」は、特定の政党、宗教団体、企業等とは一切関係のない、有志による独立した市民団体です。特定の政党や、特定の個人（政治家等）を支援・応援する目的で運営されているものではありません。活動の目的は、町田駅周辺のさらなる発展と、スポーツを通じた豊かな地域社会の実現に限定されています。
+                    「町田駅周辺にスタジアムを推進する会」は、有志による独立した市民団体です。特定の政党や、特定の個人（政治家等）を支援・応援する目的で運営されているものではありません。
                 </p>
             </section>
 
@@ -214,7 +225,7 @@
                             <li><a href="news.html" class="text-white/70 hover:text-white transition no-underline">ニュース / News</a></li>
                             <li><a href="coming-soon.html" class="text-red-400 hover:text-red-300 transition no-underline">署名 / Signature</a></li>
                             <li><a href="coming-soon.html" class="text-white/70 hover:text-white transition no-underline">よくある質問 / Q&A</a></li>
-                            <li><a href="coming-soon.html" class="text-white/70 hover:text-white transition no-underline">問い合わせ / Contact</a></li>
+                            <li><a href="contact.html" class="text-white/70 hover:text-white transition no-underline">問い合わせ / Contact</a></li>
                         </ul>
                     </div>
                 </div>

@@ -8,13 +8,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Zen+Kaku+Gothic+New:wght@400;700;900&family=Barlow+Condensed:ital,wght@0,700;0,900;1,700&display=swap" rel="stylesheet">
+    
+    <!-- 外部CSSの読み込み -->
     <link rel="stylesheet" href="css/style.css">
+    
     <style>
-        .article-content p { margin-bottom: 1.5rem; line-height: 1.8; }
-        .article-content h2 { font-size: 1.5rem; font-weight: 900; color: #002B5B; margin: 2rem 0 1rem; border-left: 4px solid #002B5B; padding-left: 1rem; }
+        /* index.html 固有のスタイル */
+        .hero-title { line-height: 1.05; font-weight: 900; }
+        .hero-overlay { background: linear-gradient(135deg, rgba(0,43,91,0.9) 0%, rgba(0,0,0,0.5) 100%); }
+        .logic-card { background: white; border-left: 4px solid var(--machida-blue); transition: all 0.3s ease; }
+        .logic-card:hover { transform: translateX(8px); background: #fdfdfd; }
     </style>
+
+    <meta name="google-site-verification" content="Tu_Z7CzRrVGG_MnlrPC-Zrf82foOdWjU0kR5sVfTMUo" />
 </head>
-<body class="bg-white text-gray-900 antialiased">
+<body>
 
     <!-- Navigation -->
     <nav class="fixed w-full z-50 glass-nav">
@@ -28,7 +36,7 @@
                 </div>
                 <!-- メニュー項目を更新 -->
                 <div class="hidden md:flex items-center space-x-10 text-[11px] font-black uppercase tracking-widest">
-                    <a href="index.html" class="text-blue-900 border-b-2 border-blue-900 pb-1 flex flex-col items-center">
+                    <a href="index.html" class="text-gray-500 hover:text-blue-900 transition flex flex-col items-center">
                         <span>Home</span>
                         <span class="text-[8px] normal-case mt-0.5 font-bold">トップ</span>
                     </a>
@@ -36,7 +44,7 @@
                         <span>Vision</span>
                         <span class="text-[8px] normal-case mt-0.5 font-bold">構想</span>
                     </a>
-                    <a href="news.html" class="text-gray-500 hover:text-blue-900 transition flex flex-col items-center">
+                    <a href="news.html" class="text-blue-900 border-b-2 border-blue-900 pb-1 flex flex-col items-center">
                         <span>News</span>
                         <span class="text-[8px] normal-case mt-0.5 font-bold">ニュース</span>
                     </a>
@@ -48,7 +56,7 @@
                         <span>Q&A</span>
                         <span class="text-[8px] normal-case mt-0.5 font-bold">よくある質問</span>
                     </a>
-                    <a href="coming-soon.html" class="text-gray-500 hover:text-blue-900 transition flex flex-col items-center">
+                    <a href="contact.html" class="text-gray-500 hover:text-blue-900 transition flex flex-col items-center">
                         <span>Contact</span>
                         <span class="text-[8px] normal-case mt-0.5 font-bold">問い合わせ</span>
                     </a>
@@ -68,21 +76,22 @@
             </div>
         </div>
         <div id="mobile-menu" class="hidden md:hidden bg-white absolute top-20 left-0 w-full p-8 shadow-2xl space-y-6 text-center border-t border-gray-100">
-            <a href="index.html" class="block text-lg font-black text-blue-900">HOME / トップ</a>
+            <a href="index.html" class="block text-lg font-black text-gray-500">HOME / トップ</a>
             <a href="coming-soon.html" class="block text-lg font-black text-gray-500">VISION / 構想</a>
-            <a href="news.html" class="block text-lg font-black text-gray-500">NEWS / ニュース</a>
+            <a href="news.html" class="block text-lg font-black text-blue-900">NEWS / ニュース</a>
             <a href="coming-soon.html" class="block text-lg font-black text-red-600">SIGNATURE / 署名</a>
             <a href="coming-soon.html" class="block text-lg font-black text-gray-500">Q&A / よくある質問</a>
-            <a href="coming-soon.html" class="block text-lg font-black text-gray-500">CONTACT / 問い合わせ</a>
+            <a href="contact.html" class="block text-lg font-black text-gray-500">CONTACT / 問い合わせ</a>
         </div>
     </nav>
+
 
     <!-- Article Header -->
     <article class="pt-40 pb-24">
         <div class="max-w-3xl mx-auto px-6">
             <div class="flex items-center gap-4 mb-8">
                 <span class="text-[10px] font-black py-1 px-4 bg-blue-900 text-white rounded-full tracking-widest uppercase">Notice</span>
-                <time class="text-sm font-bold text-gray-400 font-accent tracking-widest">2026.01.26</time>
+                <time class="text-sm font-bold text-gray-400 font-accent tracking-widest">2026.01.27</time>
             </div>
             
             <h1 class="text-3xl md:text-4xl font-black text-blue-900 mb-12 leading-tight">
@@ -154,7 +163,7 @@
                             <li><a href="news.html" class="text-white/70 hover:text-white transition no-underline">ニュース / News</a></li>
                             <li><a href="coming-soon.html" class="text-red-400 hover:text-red-300 transition no-underline">署名 / Signature</a></li>
                             <li><a href="coming-soon.html" class="text-white/70 hover:text-white transition no-underline">よくある質問 / Q&A</a></li>
-                            <li><a href="coming-soon.html" class="text-white/70 hover:text-white transition no-underline">問い合わせ / Contact</a></li>
+                            <li><a href="contact.html" class="text-white/70 hover:text-white transition no-underline">問い合わせ / Contact</a></li>
                         </ul>
                     </div>
                 </div>

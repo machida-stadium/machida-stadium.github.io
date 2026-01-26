@@ -4,7 +4,7 @@
 
 const NEWS_DATA = [
     {
-        date: "2026.01.26",
+        date: "2026.01.27",
         category: "Notice",
         title: "「町田駅周辺にスタジアムを推進する会」公式サイトを仮オープンいたしました。",
         description: "本日、公式サイトを仮公開いたしました。町田駅周辺へのスタジアム構想の情報を順次発信してまいります。",
@@ -22,6 +22,19 @@ document.addEventListener('DOMContentLoaded', () => {
         mobileMenu.classList.toggle('hidden'); // メニューを表示/非表示
         menuBtn.classList.toggle('active');   // 三本線を「✕」に変える
     });
+
+    // お問い合わせフォームの簡易バリデーション (contact.html用)
+    const contactForm = document.querySelector('form');
+    if (contactForm && window.location.pathname.includes('contact')) {
+        contactForm.addEventListener('submit', () => {
+            // 送信ボタンを無効化して二重送信を防止
+            const submitBtn = contactForm.querySelector('button[type="submit"]');
+            if (submitBtn) {
+                submitBtn.disabled = true;
+                submitBtn.innerText = "SENDING...";
+            }
+        });
+    }
 }
     /**
      * 画像表示用のHTMLを生成する関数
@@ -92,7 +105,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
         archiveNewsContainer.innerHTML = html;
     }
-
 });
 
 /**
