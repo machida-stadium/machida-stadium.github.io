@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>お問い合わせ | 町田駅周辺にスタジアムを推進する会</title>
+    <title>署名 | 町田駅周辺にスタジアムを推進する会</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,11 +19,15 @@
         .logic-card { background: white; border-left: 4px solid var(--machida-blue); transition: all 0.3s ease; }
         .logic-card:hover { transform: translateX(8px); background: #fdfdfd; }
     </style>
+    <style>
+        /* signature.html 固有のスタイル */
+        .font-barlow { font-family: 'Barlow Condensed', sans-serif; }
+        .bg-gradient-stadium { background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%); }
+    </style>
 
     <meta name="google-site-verification" content="Tu_Z7CzRrVGG_MnlrPC-Zrf82foOdWjU0kR5sVfTMUo" />
 </head>
 <body>
-
 
     <!-- Navigation -->
     <nav class="fixed w-full z-50 glass-nav">
@@ -57,7 +61,7 @@
                         <span>Q&A</span>
                         <span class="text-[8px] normal-case mt-0.5 font-bold">よくある質問</span>
                     </a>
-                    <a href="contact.html" class="text-blue-900 border-b-2 border-blue-900 pb-1 flex flex-col items-center">
+                    <a href="contact.html" class="text-gray-500 hover:text-blue-900 transition flex flex-col items-center">
                         <span>Contact</span>
                         <span class="text-[8px] normal-case mt-0.5 font-bold">問い合わせ</span>
                     </a>
@@ -82,73 +86,108 @@
             <a href="news.html" class="block text-lg font-black text-gray-500">NEWS / ニュース</a>
             <a href="signature.html" class="block text-lg font-black text-red-600">SIGNATURE / 署名</a>
             <a href="faq.html" class="block text-lg font-black text-gray-500">Q&A / よくある質問</a>
-            <a href="contact.html" class="block text-lg font-black text-blue-900">CONTACT / 問い合わせ</a>
+            <a href="contact.html" class="block text-lg font-black text-gray-500">CONTACT / 問い合わせ</a>
         </div>
     </nav>
 
-
-    <!-- Header Section -->
-    <header class="pt-32 pb-16 bg-white border-b border-gray-100">
-        <div class="max-w-3xl mx-auto px-6 text-center">
-            <span class="text-blue-600 font-barlow font-black italic tracking-[0.3em] text-sm mb-4 block">CONTACT</span>
-            <h1 class="text-3xl md:text-4xl font-black tracking-tighter mb-6">お問い合わせ</h1>
-            <p class="text-gray-500 text-sm leading-relaxed">
-                当会の活動に関するご質問、取材のご依頼、応援メッセージなど、<br class="hidden md:block">
-                こちらのフォームよりお気軽にお問い合わせください。
-            </p>
+    <!-- Hero Section -->
+    <header class="pt-32 pb-16 bg-gradient-stadium text-white">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <span class="font-barlow font-black italic tracking-[0.3em] text-sm mb-4 block opacity-80">SIGNATURE PROJECTS</span>
+            <h1 class="text-3xl md:text-5xl font-black tracking-tighter mb-8 leading-tight">
+                あなたの声が、街を動かす。<br>現在実施中の署名活動
+            </h1>
+            <div class="w-24 h-1 bg-white/30 mx-auto"></div>
         </div>
     </header>
 
-    <!-- Contact Form Section -->
+    <!-- Content Section -->
     <section class="py-20">
-        <div class="max-w-2xl mx-auto px-6">
-            <div class="bg-white rounded-3xl p-8 md:p-12 shadow-xl shadow-gray-200/50 border border-gray-100">
-                <!-- 
-                    Formspreeを使用する場合、action属性に取得したURLを貼り付けます 
-                    例: https://formspree.io/f/your-id
-                -->
-                <form action="https://formspree.io/f/xeegejew" method="POST" class="space-y-8">
-                    <div>
-                        <label class="block text-[10px] font-black tracking-widest text-blue-600 mb-2 uppercase">Your Name / お名前</label>
-                        <input type="text" name="name" required
-                            class="w-full px-5 py-4 bg-gray-50 border border-transparent rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:bg-white transition-all text-sm"
-                            placeholder="例：町田 太郎">
-                    </div>
-
-                    <div>
-                        <label class="block text-[10px] font-black tracking-widest text-blue-600 mb-2 uppercase">Email Address / メールアドレス</label>
-                        <input type="email" name="_replyto" required
-                            class="w-full px-5 py-4 bg-gray-50 border border-transparent rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:bg-white transition-all text-sm"
-                            placeholder="example@mail.com">
-                    </div>
-
-                    <div>
-                        <label class="block text-[10px] font-black tracking-widest text-blue-600 mb-2 uppercase">Message / お問い合わせ内容</label>
-                        <textarea name="message" required rows="6"
-                            class="w-full px-5 py-4 bg-gray-50 border border-transparent rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:bg-white transition-all text-sm resize-none"
-                            placeholder="こちらにお問い合わせ内容を入力してください。"></textarea>
-                    </div>
-
-                    <!-- スパム対策用 -->
-                    <input type="text" name="_gotcha" style="display:none" />
-
-                    <button type="submit"
-                        class="w-full py-5 bg-blue-600 text-white rounded-2xl font-black italic tracking-widest text-sm hover:bg-blue-700 hover:-translate-y-1 transition-all shadow-lg shadow-blue-200">
-                        SEND MESSAGE
-                    </button>
-                </form>
+        <div class="max-w-5xl mx-auto px-6">
+            
+            <!-- Intro Message -->
+            <div class="max-w-3xl mx-auto text-center mb-20">
+                <p class="leading-relaxed text-gray-600 font-bold">
+                    町田駅周辺へのスタジアム建設を実現するためには、行政や関係機関に対し「市民の声」を形にして届ける必要があります。
+                    当会では、趣旨に賛同する団体と連携し、以下の署名活動を支援しています。
+                </p>
             </div>
 
-            <div class="mt-12 text-center">
-                <p class="text-xs text-gray-400">
-                    ※送信後、担当者より数日以内に折り返しご連絡させていただきます。<br>
-                    ※ご記入いただいた個人情報は、お問い合わせへの回答以外には使用いたしません。
+            <!-- Step -->
+                <div class="space-y-6">
+                    <h2 class="text-xl font-black text-gray-900 text-center uppercase tracking-widest">Signature Step / 署名の流れ</h2>
+                    <div class="grid md:grid-cols-3 gap-4">
+                        <div class="bg-blue-50 p-6 rounded-2xl text-center">
+                            <span class="block text-blue-600 font-barlow font-black text-2xl mb-2">01</span>
+                            <p class="text-xs font-bold text-gray-700">下のボタンから<br>署名サイトへ移動</p>
+                        </div>
+                        <div class="bg-blue-50 p-6 rounded-2xl text-center">
+                            <span class="block text-blue-600 font-barlow font-black text-2xl mb-2">02</span>
+                            <p class="text-xs font-bold text-gray-700">趣旨を確認し<br>必要事項を入力</p>
+                        </div>
+                        <div class="bg-blue-50 p-6 rounded-2xl text-center">
+                            <span class="block text-blue-600 font-barlow font-black text-2xl mb-2">03</span>
+                            <p class="text-xs font-bold text-gray-700">署名を完了し<br>SNSでシェア</p>
+                        </div>
+                    </div>
+                    </p>
+                </div>
+
+
+            <!-- Signature List -->
+            <div class="grid md:grid-cols-2 gap-8">
+                
+                <!-- Signature Project 1 -->
+                <div class="bg-white rounded-[2rem] overflow-hidden shadow-xl shadow-gray-200/50 border border-gray-100 flex flex-col transition-transform hover:-translate-y-1">
+                    <div class="p-8 md:p-10 flex-grow">
+                        <div class="flex items-center gap-3 mb-6">
+                            <span class="px-3 py-1 bg-blue-100 text-blue-700 text-[10px] font-black uppercase tracking-widest rounded-full">Active</span>
+                            <span class="text-xs font-bold text-gray-400">Online Signature</span>
+                        </div>
+                        <h3 class="text-xl md:text-2xl font-black text-gray-900 mb-4 leading-tight">町田を「駅前スタジアム」がある街に！</h3>
+                        <p class="text-sm text-gray-500 leading-relaxed mb-8">
+                            ペイ・フォワードまちだ『100人の声プロジェクト』の学生発案による署名運動
+                        </p>
+                        <div class="space-y-3 mb-8">
+                            <div class="flex items-center text-xs font-bold text-gray-600">
+                                <span class="w-20 text-gray-400">実施団体:</span> Zドリーム 学生会
+                            </div>
+                            <div class="flex items-center text-xs font-bold text-gray-600">
+                                <span class="w-20 text-gray-400">目標数:</span> 5,000筆
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4 bg-gray-50 border-t border-gray-100">
+                        <a href="https://c.org/2fJznFDRbT" target="_blank" rel="noopener noreferrer"
+                           class="block w-full py-4 bg-blue-600 text-white text-center rounded-xl font-black italic tracking-widest text-sm hover:bg-blue-700 transition-colors shadow-lg shadow-blue-200">
+                            SIGN NOW / 署名する
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Precaution -->
+            <div class="mt-20 max-w-2xl mx-auto text-center p-8 bg-blue-50 rounded-2xl border border-blue-100">
+                <h4 class="text-blue-900 font-black mb-4 flex items-center justify-center">
+                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
+                    署名に関する注意事項
+                </h4>
+                <p class="text-xs text-blue-700 leading-relaxed font-bold">
+                    ※各署名活動はそれぞれの団体によって運営されています。<br>
+                    ※リンク先は外部サイト（Change.org等）となります。各サイトの規約をご確認ください。<br>
+                    ※お預かりした署名情報は、それぞれの活動趣旨に基づき適切に提出されます。
                 </p>
+            </div>
+
+        </div>
+    </section>
+
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
+<!-- Footer -->
     <footer class="bg-blue-900 text-white py-24">
         <div class="max-w-7xl mx-auto px-6 lg:px-12">
             <div class="flex flex-col md:flex-row justify-between items-start mb-20">
@@ -203,7 +242,10 @@
             </div>
         </div>
     </footer>
+
+
     <script src="js/main.js"></script>
+
 <!-- 
   SNS Share Unit (Functional Edition)
   - ページURLとタイトルを自動取得してシェア。
@@ -328,5 +370,6 @@
         shareUnit.classList.remove('is-open');
     });
 </script>
+
 </body>
 </html>
