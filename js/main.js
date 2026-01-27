@@ -3,6 +3,15 @@
    --------------------------------------------------------- */
 
 const NEWS_DATA = [
+
+    {
+        date: "2026.01.27",
+        category: "Notice",
+        title: "【メンバー募集】町田の未来を共に描く仲間を募集します！",
+        description: "町田の未来を共に考え、行動してくれるメンバーを募集いたします。",
+        image: "../images/news-002.png", 
+        url: "news-002.html"
+    }   ,
     {
         date: "2026.01.27",
         category: "Notice",
@@ -10,7 +19,7 @@ const NEWS_DATA = [
         description: "本日、公式サイトを仮公開いたしました。町田駅周辺へのスタジアム構想の情報を順次発信してまいります。",
         image: "../images/news-001.png", // 画像がない場合は自動で「NO IMAGE」になります
         url: "news-001.html"
-    }
+    }   ,
 ];
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -185,6 +194,4 @@ function copyPageLink() {
         msg.style.opacity = "1";
         setTimeout(() => { msg.style.opacity = "0"; }, 2000);
     }
-
 }
-
