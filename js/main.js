@@ -24,7 +24,7 @@ const NEWS_DATA = [
     {
         date: "2026.01.27",
         category: "Notice",
-        title: "「町田駅周辺にスタジアムを推進する会」ホームページを仮オープンいたしました。",
+        title: "「町田駅周辺にスタジアムを推進する会」ホームページをオープンいたしました。",
         description: "本日、ホームページを公開いたしました。町田駅周辺へのスタジアム構想の情報を順次発信してまいります。",
         image: "../images/news-001.png", // 画像がない場合は自動で「NO IMAGE」になります
         url: "news-001.html"
@@ -205,3 +205,4 @@ function copyPageLink() {
     }
 
 }
+
