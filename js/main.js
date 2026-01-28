@@ -5,6 +5,15 @@
 const NEWS_DATA = [
 
     {
+        date: "2026.01.29",
+        category: "Notice",
+        title: "【重要】本プロジェクトの活動趣旨とマナーに関する最大限のお願い",
+        description: "いつも当サイトをご覧いただき、ありがとうございます。本プロジェクトに対する多くの反響に感謝すると同時に、皆様に強くお願い申し上げます。",
+        image: "../images/attention.png", 
+        url: "news-003.html"
+    }   ,
+
+    {
         date: "2026.01.27",
         category: "Notice",
         title: "【メンバー募集】町田の未来を共に描く仲間を募集します！",
