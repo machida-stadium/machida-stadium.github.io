@@ -203,6 +203,4 @@ function copyPageLink() {
         msg.style.opacity = "1";
         setTimeout(() => { msg.style.opacity = "0"; }, 2000);
     }
-
 }
-
