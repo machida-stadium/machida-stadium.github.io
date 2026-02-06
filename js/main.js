@@ -5,6 +5,16 @@
 const NEWS_DATA = [
 
     {
+        date: "2026.02.06",
+        category: "Notice",
+        title: "「Zドリーム」による署名活動への協力について",
+        description: "当会では、町田の未来を想う有志団体「Zドリーム」が実施している署名活動の趣旨に賛同し、協力することといたしました。",
+        image: "../images/news-004.png", 
+        url: "news-004.html"
+    }   ,
+
+
+    {
         date: "2026.01.29",
         category: "Notice",
         title: "【重要】本プロジェクトの活動趣旨とマナーに関する最大限のお願い",
