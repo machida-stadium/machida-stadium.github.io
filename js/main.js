@@ -3,42 +3,46 @@
    --------------------------------------------------------- */
 
 const NEWS_DATA = [
-
+    {
+        date: "2026.02.13",
+        category: "Notice",
+        title: "【2026年 町田市長選挙】町田の未来を、私たちの一票で動かそう",
+        description: "2月15日(日)に町田市長選挙の投開票が行われます。各候補者のスタジアム構想に対するスタンスをまとめました。",
+        image: "images/news-005.png",
+        url: "news-005.html"
+    },
     {
         date: "2026.02.06",
         category: "Notice",
         title: "「Zドリーム」による署名活動への協力について",
         description: "当会では、町田の未来を想う有志団体「Zドリーム」が実施している署名活動の趣旨に賛同し、協力することといたしました。",
-        image: "../images/news-004.png", 
+        image: "images/news-004.png",
         url: "news-004.html"
-    }   ,
-
-
+    },
     {
         date: "2026.01.29",
         category: "Notice",
         title: "【重要】本プロジェクトの活動趣旨とマナーに関する最大限のお願い",
         description: "いつも当サイトをご覧いただき、ありがとうございます。本プロジェクトに対する多くの反響に感謝すると同時に、皆様に強くお願い申し上げます。",
-        image: "../images/attention.png", 
+        image: "images/attention.png",
         url: "news-003.html"
-    }   ,
-
+    },
     {
         date: "2026.01.27",
         category: "Notice",
         title: "【メンバー募集】町田の未来を共に描く仲間を募集します！",
         description: "町田の未来を共に考え、行動してくれるメンバーを募集いたします。",
-        image: "../images/news-002.png", 
+        image: "images/news-002.png",
         url: "news-002.html"
-    }   ,
+    },
     {
         date: "2026.01.27",
         category: "Notice",
         title: "「町田駅周辺にスタジアムを推進する会」ホームページをオープンいたしました。",
         description: "本日、ホームページを公開いたしました。町田駅周辺へのスタジアム構想の情報を順次発信してまいります。",
-        image: "../images/news-001.png", // 画像がない場合は自動で「NO IMAGE」になります
+        image: "images/news-001.png",
         url: "news-001.html"
-    }   ,
+    }
 ];
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -47,11 +51,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const mobileMenu = document.getElementById('mobile-menu');
     if (menuBtn && mobileMenu) {
         menuBtn.addEventListener('click', () => {
-        mobileMenu.classList.toggle('hidden'); // メニューを表示/非表示
-        menuBtn.classList.toggle('active');   // 三本線を「✕」に変える
-    });
+            mobileMenu.classList.toggle('hidden');
+            menuBtn.classList.toggle('active');
+        });
+    }
 
-    // お問い合わせフォームの簡易バリデーション (contact.html用)
+    // 2. お問い合わせフォームの簡易バリデーション (contact.html用)
     const contactForm = document.querySelector('form');
     if (contactForm && window.location.pathname.includes('contact')) {
         contactForm.addEventListener('submit', () => {
@@ -63,7 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
-}
+
     /**
      * 画像表示用のHTMLを生成する関数
      * 画像がある場合は <img>、ない場合は NO IMAGE のプレースホルダーを返す
@@ -72,7 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (imgUrl && imgUrl.trim() !== "") {
             return `<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110" style="background-image: url('${imgUrl}');"></div>`;
         } else {
-            // 画像がない場合の「NO IMAGE」デザイン（ネイビーの背景に白文字）
+            // 画像がない場合の「NO IMAGE」デザイン
             return `
                 <div class="w-full h-full bg-slate-200 flex items-center justify-center transition-transform duration-500 group-hover:scale-110">
                     <div class="text-center">
@@ -84,7 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
-    // 2. トップページの「最新3件」自動表示
+    // 3. トップページの「最新3件」自動表示
     const homeNewsContainer = document.getElementById('news-list-container');
     if (homeNewsContainer) {
         const latestNews = NEWS_DATA.slice(0, 3);
@@ -108,7 +113,7 @@ document.addEventListener('DOMContentLoaded', () => {
         homeNewsContainer.innerHTML = html;
     }
 
-    // 3. ニュース一覧ページの「全件」自動表示
+    // 4. ニュース一覧ページの「全件」自動表示
     const archiveNewsContainer = document.getElementById('news-archive-container');
     if (archiveNewsContainer) {
         let html = '';
@@ -133,11 +138,29 @@ document.addEventListener('DOMContentLoaded', () => {
         });
         archiveNewsContainer.innerHTML = html;
     }
+
+    // 5. FAQアコーディオンの制御ロジック
+    const faqQuestions = document.querySelectorAll('.faq-question');
+    faqQuestions.forEach(question => {
+        question.addEventListener('click', () => {
+            const item = question.parentElement;
+            
+            // 1つだけ開くように、他の項目をすべて閉じる
+            document.querySelectorAll('.faq-item').forEach(otherItem => {
+                if (otherItem !== item) {
+                    otherItem.classList.remove('active');
+                }
+            });
+            
+            // クリックした項目の表示/非表示を切り替える
+            item.classList.toggle('active');
+        });
+    });
 });
 
 /**
  * =========================================================
- * 1. Google Analytics (gtag.js) 一括配信設定
+ * Google Analytics (gtag.js) 一括配信設定
  * =========================================================
  * このJSを読み込んでいるすべてのHTMLで統計が取れるようになります。
  */
@@ -159,29 +182,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // ページビューを送信
     gtag('config', GA_ID);
 })();
-
-/**
- * FAQアコーディオンの制御ロジック
- */
-window.addEventListener('DOMContentLoaded', () => {
-    const faqQuestions = document.querySelectorAll('.faq-question');
-    
-    faqQuestions.forEach(question => {
-        question.addEventListener('click', () => {
-            const item = question.parentElement;
-            
-            // 1つだけ開くように、他の項目をすべて閉じる
-            document.querySelectorAll('.faq-item').forEach(otherItem => {
-                if (otherItem !== item) {
-                    otherItem.classList.remove('active');
-                }
-            });
-            
-            // クリックした項目の表示/非表示を切り替える
-            item.classList.toggle('active');
-        });
-    });
-});
 
 /**
  * SNSシェア機能（X, LINE, リンクコピー）
