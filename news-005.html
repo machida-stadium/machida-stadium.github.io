@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【2026年 町田市長選挙】町田の未来を、私たちの一票で動かそう | NEWS | 町田駅周辺にスタジアムを推進する会</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Zen+Kaku+Gothic+New:wght@400;700;900&family=Barlow+Condensed:ital,wght@0,700;0,900;1,700&display=swap" rel="stylesheet">
+    
+    <!-- 外部CSSの読み込み -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <style>
+        .article-content p { margin-bottom: 1.5rem; line-height: 1.8; }
+        .article-content h2 { font-size: 1.75rem; font-weight: 900; color: #002B5B; margin: 3rem 0 1.5rem; border-left: 4px solid #002B5B; padding-left: 1rem; }
+        .article-content h3 { font-size: 1.25rem; font-weight: 700; color: #1E40AF; margin: 2rem 0 1rem; }
+        .article-content ul { list-style-type: disc; margin-left: 2rem; margin-bottom: 1.5rem; }
+        .article-content li { margin-bottom: 0.5rem; line-height: 1.7; }
+        .candidate-box { background: #f8fafc; border-left: 4px solid #3b82f6; padding: 1.5rem; margin: 1.5rem 0; border-radius: 0.5rem; }
+        .video-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; margin: 2rem 0; }
+        .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 0.5rem; }
+        .disclaimer-box { background: #fef3c7; border: 2px solid #f59e0b; padding: 1.5rem; margin: 2rem 0; border-radius: 0.5rem; }
+    </style>
+
+    <meta name="google-site-verification" content="Tu_Z7CzRrVGG_MnlrPC-Zrf82foOdWjU0kR5sVfTMUo" />
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-nav">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex flex-col">
+                        <span class="text-lg md:text-xl font-black text-blue-900 tracking-tighter leading-none mb-1">町田駅周辺にスタジアムを推進する会</span>
+                        <span class="text-[9px] font-bold text-blue-700 tracking-[0.3em] opacity-70 leading-none uppercase font-accent">Stadium Association Machida Station</span>
+                    </a>
+                </div>
+                <!-- メニュー項目を更新 -->
+                <div class="hidden md:flex items-center space-x-10 text-[11px] font-black uppercase tracking-widest">
+                    <a href="index.html" class="text-gray-500 hover:text-blue-900 transition flex flex-col items-center">
+                        <span>Home</span>
+                        <span class="text-[8px] normal-case mt-0.5 font-bold">トップ</span>
+                    </a>
+                    <a href="coming-soon.html" class="text-gray-500 hover:text-blue-900 transition flex flex-col items-center">
+                        <span>Vision</span>
+                        <span class="text-[8px] normal-case mt-0.5 font-bold">構想</span>
+                    </a>
+                    <a href="news.html" class="text-blue-900 border-b-2 border-blue-900 pb-1 flex flex-col items-center">
+                        <span>News</span>
+                        <span class="text-[8px] normal-case mt-0.5 font-bold">ニュース</span>
+                    </a>
+                    <a href="signature.html" class="text-gray-500 hover:text-blue-900 transition flex flex-col items-center">
+                        <span>Signature</span>
+                        <span class="text-[8px] normal-case mt-0.5 font-bold text-red-600">署名</span>
+                    </a>
+                    <a href="faq.html" class="text-gray-500 hover:text-blue-900 transition flex flex-col items-center">
+                        <span>Q&A</span>
+                        <span class="text-[8px] normal-case mt-0.5 font-bold">よくある質問</span>
+                    </a>
+                    <a href="contact.html" class="text-gray-500 hover:text-blue-900 transition flex flex-col items-center">
+                        <span>Contact</span>
+                        <span class="text-[8px] normal-case mt-0.5 font-bold">問い合わせ</span>
+                    </a>
+                    <div class="flex items-center ml-6 border-l pl-6 border-gray-200">
+                        <a href="https://x.com/machida_stadium" target="_blank" class="text-gray-400 hover:text-black transition">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="md:hidden flex items-center">
+                   <button id="mobile-menu-btn" class="md:hidden flex flex-col justify-center items-center w-10 h-10 gap-1.5 focus:outline-none group">
+                        <span class="line-1 w-6 h-0.5 bg-blue-900 transition-all duration-300"></span>
+                        <span class="line-2 w-6 h-0.5 bg-blue-900 transition-all duration-300"></span>
+                        <span class="line-3 w-6 h-0.5 bg-blue-900 transition-all duration-300"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white absolute top-20 left-0 w-full p-8 shadow-2xl space-y-6 text-center border-t border-gray-100">
+            <a href="index.html" class="block text-lg font-black text-gray-500">HOME / トップ</a>
+            <a href="coming-soon.html" class="block text-lg font-black text-gray-500">VISION / 構想</a>
+            <a href="news.html" class="block text-lg font-black text-blue-900">NEWS / ニュース</a>
+            <a href="signature.html" class="block text-lg font-black text-red-600">SIGNATURE / 署名</a>
+            <a href="faq.html" class="block text-lg font-black text-gray-500">Q&A / よくある質問</a>
+            <a href="contact.html" class="block text-lg font-black text-gray-500">CONTACT / 問い合わせ</a>
+        </div>
+    </nav>
+
+
+    <!-- Article Header -->
+    <article class="pt-40 pb-24">
+        <div class="max-w-3xl mx-auto px-6">
+            <div class="flex items-center gap-4 mb-8">
+                <span class="text-[10px] font-black py-1 px-4 bg-blue-900 text-white rounded-full tracking-widest uppercase">Notice</span>
+                <time class="text-sm font-bold text-gray-400 font-accent tracking-widest">2026.02.13</time>
+            </div>
+            
+            <h1 class="text-3xl md:text-4xl font-black text-blue-900 mb-12 leading-tight">
+                【2026年 町田市長選挙】町田の未来を、私たちの一票で動かそう
+            </h1>
+
+            <!-- サムネイル画像（画像がある場合はここに表示） -->
+            <div class="rounded-3xl overflow-hidden mb-12 shadow-xl">
+                <!-- 画像を用意する場合は以下のコメントを外して、src属性に画像パスを指定してください -->
+                <!-- <img src="images/news-005.png" alt="町田市長選挙" class="w-full h-auto"> -->
+                
+                <!-- 画像がない場合の代替表示 -->
+                <div class="w-full aspect-video bg-gradient-to-br from-blue-900 to-blue-700 flex items-center justify-center">
+                    <div class="text-center text-white p-8">
+                        <div class="text-6xl font-black mb-4">🗳️</div>
+                        <div class="text-2xl font-black mb-2">2026年 町田市長選挙</div>
+                        <div class="text-sm font-bold opacity-80">2月15日(日) 投開票</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="article-content text-gray-700 text-lg">
+                
+                <h2>選挙の概要：あと2日で投開票</h2>
+                <p>
+                    2月15日(日)に町田市長選挙の投開票が行われます。現職退任により、全員新人5名による選挙戦となっています。
+                </p>
+                
+                <div class="candidate-box">
+                    <h3 class="text-base font-black text-blue-900 mb-3">立候補者（届け出順）</h3>
+                    <ul class="space-y-2 text-base">
+                        <li><strong>おくざわ高広</strong>さん（43歳、無所属）</li>
+                        <li><strong>稲垣康治</strong>さん（50歳、無所属・自民推薦）</li>
+                        <li><strong>木目田英男</strong>さん（51歳、無所属）</li>
+                        <li><strong>秋田しづか</strong>さん（45歳、無所属）</li>
+                        <li><strong>戸塚正人</strong>さん（45歳、無所属・国民民主推薦）</li>
+                    </ul>
+                    <p class="mt-4 text-sm text-gray-600">
+                        <strong>投票時間：</strong>午前7時〜午後8時（期日前投票も可能です）
+                    </p>
+                </div>
+
+                <h2>当会の視点：まちなかスタジアムが街の活性化の鍵</h2>
+                <p>
+                    私たちは町田駅周辺再開発D地区を活かした「まちなかスタジアム」を、経済活性化・交流人口拡大・持続可能なまちづくりの重要な手段として推進しています。
+                </p>
+                <p>
+                    次の市長がこの構想にどれだけ向き合い、具体的に前進させていくか。それが今後4年間の町田の未来を大きく左右すると考えています。
+                </p>
+
+                <h2>各候補者のスタジアム構想に対するスタンス</h2>
+
+                <h3>🏟️ おくざわ高広さん：まちなかスタジアム・アリーナ構想を重点政策に掲げる</h3>
+                <p>
+                    おくざわさんは<strong>「まちなかスタジアム・アリーナ構想」を重点政策の一つ</strong>として明確に掲げ、町田駅前での官民連携による実現を主張しています。
+                </p>
+                <p>
+                    15,000〜17,000人収容のスタジアムとアリーナの複合施設により、年間来場者250〜300万人、経済効果120〜140億円を見込み、産業誘致と連動した街の好循環を目指すとしています。反対意見への配慮も含め、詳細なビジョンを公開されています。
+                </p>
+                
+                <div class="bg-blue-50 p-6 rounded-2xl my-6">
+                    <p class="text-sm font-bold text-blue-900 mb-4">📺 参考：おくざわ高広さんの構想解説動画（公式チャンネルより）</p>
+                    
+                    <p class="text-sm font-bold mb-2">構想詳細解説動画</p>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/Ck83XjZXbIY" title="経済効果100億円超！町田まちなかスタジアム・アリーナ構想。おくざわ高広が、その実現への道を語る" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    
+                    <p class="text-sm font-bold mb-2 mt-6">Q&A形式動画</p>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/o4oZRa6xuGk" title="まちだを話そう-おくざわ高広が掲げる町田まちなかスタジアム・アリーナ構想について全部答えます" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <h3>🤝 秋田しづかさん：駅近くスタジアムに前向きだがプロセス重視</h3>
+                <p>
+                    駅近くのスタジアムに利便性を認めつつも、「D地区ありきは避け、地権者の理解と税金投入の最小化を」と慎重な姿勢を示しています。話し合いを最優先とする現実路線のアプローチです。
+                </p>
+
+                <h3>🏙️ 稲垣康治さん：中心市街地再開発全体を重視</h3>
+                <p>
+                    スタジアムへの直接的な言及は少ないものの、地域活力向上の文脈でD地区再開発計画を重要視されています。現職路線の継承色が強い方針です。
+                </p>
+
+                <h3>💼 木目田英男さん：民間投資促進による再開発</h3>
+                <p>
+                    町田駅周辺再開発を民間主導で進めるスタンス。公共施設の民間活用を重視する方針を示しています。
+                </p>
+
+                <h3>🌱 戸塚正人さん：市民協働・官民連携の再整備</h3>
+                <p>
+                    町田駅前再整備を掲げ、企業誘致や公共施設再編に注力。市民協働の枠組みで大型プロジェクトに柔軟に対応する姿勢を示しています。
+                </p>
+
+                <h2>私たちの一票で町田の未来を前進させよう</h2>
+                <p>
+                    スタジアム構想は、単なるスポーツ施設の話ではありません。<strong>町田全体を稼ぎ、賑わい、住み続けたい街にする都市戦略</strong>です。
+                </p>
+                <p>
+                    各候補者の政策をしっかり見て、「町田を本気で変えたい」と思える方に一票を投じてください。
+                </p>
+                <ul>
+                    <li>街の活性化</li>
+                    <li>中心市街地の再開発</li>
+                    <li>若者・家族が住み続けたいまち</li>
+                </ul>
+                <p>
+                    こうしたキーワードに注目しながら、ぜひ投票所へ足を運んでください。
+                </p>
+                <p class="text-xl font-black text-blue-900 my-8">
+                    町田の未来は、私たち市民の手の中にあります。
+                </p>
+                <p>
+                    一人でも多くの方が投票所へ足を運んでくださることを、心より願っています。
+                </p>
+
+                <div class="disclaimer-box">
+                    <p class="text-sm font-bold text-gray-800 mb-2">⚠️ 免責事項</p>
+                    <p class="text-sm text-gray-700 leading-relaxed">
+                        当会は特定の候補者を支持・不支持する立場ではなく、スタジアム構想に関する公開情報を提供するものです。各候補者の見解は公式サイト・報道・選挙公報に基づきまとめています。詳細はご自身でご確認ください。
+                    </p>
+                </div>
+
+                <p class="text-right text-sm text-gray-500 mt-12">
+                    町田駅周辺にスタジアムを推進する会<br>
+                    2026年2月13日
+                </p>
+            </div>
+
+            <div class="mt-20 pt-12 border-t border-gray-100 flex justify-between items-center">
+                <a href="news.html" class="text-sm font-black text-blue-900 no-underline hover:opacity-60 transition flex items-center gap-2">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                    BACK TO LIST
+                </a>
+            </div>
+        </div>
+    </article>
+
+<!-- Footer -->
+    <footer class="bg-blue-900 text-white py-24">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="flex flex-col md:flex-row justify-between items-start mb-20">
+                <div class="mb-16 md:mb-0">
+                    <h2 class="text-2xl font-black italic font-accent text-white mb-6 tracking-tighter uppercase leading-none">
+                        町田駅周辺に<br>スタジアムを推進する会
+                    </h2>
+                    <p class="text-blue-200 text-xs max-w-xs leading-relaxed font-bold italic mb-6">
+                        Football Stadium as a catalyst for urban growth.
+                    </p>
+                    <p class="text-[10px] text-blue-300/60 leading-relaxed max-w-sm font-medium mb-8">
+                        【免責事項】当サイトは町田市の未来を考える市民有志による「町田駅周辺にスタジアムを推進する会」の非公式の構想案です。<br>町田市役所、FC町田ゼルビア、および関連企業とは一切関係ありません。内容に関する関係各所へのお問い合わせはご遠慮ください。<br>また特定の政党、個人を応援するものではありません。
+                    </p>
+                    
+                    <!-- SNS Icons -->
+                    <div class="flex items-center gap-5">
+                        <a href="https://x.com/machida_stadium" target="_blank" rel="noopener noreferrer" class="w-10 h-10 flex items-center justify-center rounded-full bg-white/5 border border-white/10 hover:bg-white hover:text-blue-900 transition-all duration-300 group">
+                            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-16 md:gap-24">
+                    <div>
+                        <h3 class="text-[10px] font-black text-blue-300 uppercase tracking-[0.3em] mb-8">Menu</h3>
+                        <ul class="text-xs font-bold space-y-4 list-none p-0">
+                            <li><a href="index.html" class="text-white/70 hover:text-white transition no-underline">トップ / Top</a></li>
+                            <li><a href="coming-soon.html" class="text-white/70 hover:text-white transition no-underline">構想 / Vision</a></li>
+                            <li><a href="news.html" class="text-white/70 hover:text-white transition no-underline">ニュース / News</a></li>
+                            <li><a href="signature.html" class="text-red-400 hover:text-red-300 transition no-underline">署名 / Signature</a></li>
+                            <li><a href="faq.html" class="text-white/70 hover:text-white transition no-underline">よくある質問 / Q&A</a></li>
+                            <li><a href="contact.html" class="text-white/70 hover:text-white transition no-underline">問い合わせ / Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-white/10 pt-12 flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="text-[10px] font-black text-blue-300 tracking-widest uppercase italic">
+                    &copy; 2026 町田駅周辺にスタジアムを推進する会. All Rights Reserved.
+                </div>
+                <div class="flex justify-center gap-6">
+                    <a href="policy.html" class="text-[10px] font-bold text-blue-300 hover:text-white transition no-underline uppercase tracking-widest">プライバシーポリシー / 免責事項</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- 共通JS読み込み -->
+    <script src="js/main.js"></script>
+
+<!-- 
+  SNS Share Unit (Functional Edition)
+  - ページURLとタイトルを自動取得してシェア。
+  - X, LINE, クリップボードコピーに対応。
+-->
+
+<div id="share-unit" class="fixed bottom-8 right-8 z-[100] flex flex-col items-end pointer-events-none">
+    
+    <!-- SNSオプション -->
+    <div id="share-options" class="flex flex-col gap-3 mb-4 opacity-0 translate-y-4 scale-90 pointer-events-none transition-all duration-500 cubic-bezier(0.34, 1.56, 0.64, 1)">
+        
+        <!-- X (Twitter) -->
+        <div class="flex items-center gap-3 group">
+            <span class="bg-black/80 backdrop-blur-md text-white text-[10px] font-black px-3 py-1.5 rounded-lg shadow-xl opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap uppercase tracking-widest">Share on X</span>
+            <button onclick="shareOnX()" class="w-12 h-12 flex items-center justify-center bg-black text-white rounded-full shadow-2xl hover:scale-110 active:scale-95 transition-all pointer-events-auto">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932 6.064-6.932zm-1.292 19.494h2.039L6.486 3.24H4.298l13.311 17.407z"/></svg>
+            </button>
+        </div>
+
+        <!-- LINE -->
+        <div class="flex items-center gap-3 group">
+            <span class="bg-[#06C755]/80 backdrop-blur-md text-white text-[10px] font-black px-3 py-1.5 rounded-lg shadow-xl opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap uppercase tracking-widest">Line it</span>
+            <button onclick="shareOnLine()" class="w-12 h-12 flex items-center justify-center bg-[#06C755] text-white rounded-full shadow-2xl hover:scale-110 active:scale-95 transition-all pointer-events-auto">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M21 10.375c0-4.125-4.041-7.5-9-7.5s-9 3.375-9 7.5c0 3.687 3.208 6.792 7.541 7.396.292.062.688.188.792.438.104.25.062.646.041.896l-.167 1.021c-.041.25-.188 1.021.792.562 1.021-.479 5.438-3.188 7.417-5.458 1.041-1.125 1.583-2.313 1.583-3.854z"/></svg>
+            </button>
+        </div>
+
+        <!-- URL Copy -->
+        <div class="flex items-center gap-3 group">
+            <span class="bg-blue-600/80 backdrop-blur-md text-white text-[10px] font-black px-3 py-1.5 rounded-lg shadow-xl opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap uppercase tracking-widest">Copy Link</span>
+            <button onclick="handleCopy()" class="w-12 h-12 flex items-center justify-center bg-white text-blue-600 rounded-full shadow-2xl hover:scale-110 active:scale-95 transition-all pointer-events-auto border border-blue-50 relative">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+                <span id="copy-toast" class="absolute -top-10 left-1/2 -translate-x-1/2 bg-blue-600 text-white text-[8px] font-black px-2 py-1 rounded opacity-0 transition-all duration-300 pointer-events-none">COPIED!</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- トグルボタン -->
+    <button id="share-toggle" class="w-16 h-16 flex items-center justify-center bg-white border border-gray-100 rounded-full shadow-[0_20px_50px_rgba(0,43,91,0.2)] text-blue-900 pointer-events-auto hover:scale-105 active:scale-90 transition-all duration-300 group overflow-hidden">
+        <div id="toggle-icon" class="relative w-6 h-6 transition-transform duration-500">
+            <svg class="absolute inset-0 w-6 h-6 transition-all duration-500 opacity-100 rotate-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                <path d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"/>
+            </svg>
+            <svg class="absolute inset-0 w-6 h-6 transition-all duration-500 opacity-0 rotate-90" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                <path d="M6 18L18 6M6 6l12 12"/>
+            </svg>
+        </div>
+        <div class="absolute inset-0 bg-blue-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10"></div>
+    </button>
+</div>
+
+<style>
+    /* 展開アニメーション */
+    #share-unit.is-open #share-options {
+        opacity: 1;
+        translate: 0 0;
+        scale: 1;
+        pointer-events: auto;
+    }
+    #share-unit.is-open #toggle-icon svg:nth-child(1) { opacity: 0; rotate: -90deg; }
+    #share-unit.is-open #toggle-icon svg:nth-child(2) { opacity: 1; rotate: 0deg; }
+    
+    @media (max-width: 768px) {
+        #share-options span { display: none; }
+    }
+</style>
+
+<script>
+    const shareUnit = document.getElementById('share-unit');
+    const shareToggle = document.getElementById('share-toggle');
+    const copyToast = document.getElementById('copy-toast');
+
+    // トグル開閉
+    shareToggle.addEventListener('click', (e) => {
+        e.stopPropagation();
+        shareUnit.classList.toggle('is-open');
+    });
+
+    // 1. X (Twitter) シェア
+    function shareOnX() {
+        const url = encodeURIComponent(window.location.href);
+        const text = encodeURIComponent(document.title + "\n町田駅周辺スタジアム構想");
+        window.open(`https://twitter.com/intent/tweet?url=${url}&text=${text}`, '_blank');
+    }
+
+    // 2. LINE シェア
+    function shareOnLine() {
+        const url = encodeURIComponent(window.location.href);
+        const text = encodeURIComponent(document.title);
+        window.open(`https://social-plugins.line.me/lineit/share?url=${url}&text=${text}`, '_blank');
+    }
+
+    // 3. URLコピー
+    function handleCopy() {
+        const url = window.location.href;
+        
+        // クリップボードへのコピー実行
+        const tempInput = document.createElement('input');
+        tempInput.value = url;
+        document.body.appendChild(tempInput);
+        tempInput.select();
+        try {
+            document.execCommand('copy');
+            showToast();
+        } catch (err) {
+            console.error('Copy failed', err);
+        }
+        document.body.removeChild(tempInput);
+    }
+
+    function showToast() {
+        copyToast.style.opacity = '1';
+        copyToast.style.transform = 'translate(-50%, -10px)';
+        setTimeout(() => {
+            copyToast.style.opacity = '0';
+            copyToast.style.transform = 'translate(-50%, 0)';
+        }, 2000);
+    }
+
+    // 画面外クリックで閉じる
+    document.addEventListener('click', () => {
+        shareUnit.classList.remove('is-open');
+    });
+</script>
+</body>
+</html>
